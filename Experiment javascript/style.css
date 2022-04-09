@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #c3c7e1;
+}
+
+body {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+header {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header ul {
+  list-style: none;
+}
+
+header a{
+  text-decoration: none;
+  color: black;
+}
+
+header ul:first-child {
+  display: flex;
+  gap: 20px;
+}
+
+/* Showcase */
+.showcase {
+  height: 80vh;
+  background-image: url(/Images/pexels-pixabay-273209.jpg);
+  display: flex;
+  justify-content: end;
+  padding-right: 300px;
+}
+
+.showcase .showcase-card {
+  height: 100%;
+  width: 30%;
+  padding: 30px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+}
+
+.showcase-card h1, 
+.showcase-card p {
+  padding-bottom: 20px;
+}
+
+.showcase-card h1 {
+  text-transform: uppercase;
+}
+
+.showcase button {
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 5%;
+  color: white;
+  padding: 10px 20px;
+  width: 50%;
+}
+
+/* Container */
+.container {
+  height: 60vh;
+  background-color: var(--background-color);
+}
+
+.container div {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.container h3{
+  text-transform: uppercase;
+}
+
+.container p {
+  width: 50%;
+}
